@@ -1,1 +1,31 @@
-Hello World
+---
+layout: archive
+author_profile: true
+---
+
+{% include base_path %}
+
+<h3 class="archive__subtitle">About</h3>
+<p>>_ Hello. My name is Ioannis Koutoulakis and I am an M.Sc. student in Advanced Computing : Machine Learning, Data Mining and 
+High Performance Computing at the University of Bristol, Uk.
+<br>
+B.Sc graduate in Computer Science from Department of Informatics and Telecommunications at University of Athens, Greece , I am 
+particularly interested in Machine Learning techniques and Big Data.
+</p>
+
+<h3 class="archive__subtitle">Research interests</h3>
+<p>
+Knowledge Discovery<br>
+Pattern and Feature Extraction<br>
+Big data manipulation<br>
+Database management systems<br>
+Visualization Technolgies<br>
+</p>
+<h3 class="archive__subtitle">Contact</h3>
+<p>If you would like to contact me, please send me an <a href="mailto:koutoulakis.ioannis@gmail.com" target="_blank"><u>email.</u></a></p>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

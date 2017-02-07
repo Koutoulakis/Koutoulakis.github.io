@@ -1,0 +1,13 @@
+# main links links
+main:
+  - title: "HOME"
+    url: /
+
+  - title: "EXPERIENCE"
+    url: /xp.html
+    
+  - title: "CURRICULUM VITAE"
+    url: /cv.html
+    
+  - title: "MISCELLANEOUS"
+    url: /misc.html

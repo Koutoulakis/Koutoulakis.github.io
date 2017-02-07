@@ -1,0 +1,56 @@
+---
+layout: archive
+author_profile: true
+---
+
+{% include base_path %}
+
+<h3 class="archive__subtitle">Some basic concepts</h3>
+<p>
+<strong>Artificial Intelligence</strong> is the study of how to create intelligent agents. In practice, it is how to program a computer 
+to behave and perform a task as an intelligent agent (say, a person) would. This does not have to involve learning 
+or induction at all, it can just be a way to 'build a better mousetrap'. For example, AI applications have included 
+programs to monitor and control ongoing processes (e.g., increase aspect A if it seems too low). Notice that AI can 
+include darn-near anything that a machine does, so long as it doesn't do it 'stupidly'.
+<br>
+In practice, however, most tasks that require intelligence require an ability to induce new knowledge from experiences. Thus, 
+a large area within AI is <strong>machine learning</strong>. A computer program is said to learn some task from experience if its performance 
+at the task improves with experience, according to some performance measure. Machine learning involves the study of algorithms 
+that can extract information automatically (i.e., without on-line human guidance). It is certainly the case that some of these 
+procedures include ideas derived directly from, or inspired by, classical statistics, but they don't have to be. Similarly to AI, 
+machine learning is very broad and can include almost everything, so long as there is some inductive component to it. 
+An example of a machine learning algorithm might be a Kalman filter.
+<br>
+<strong>Data mining</strong> is an area that has taken much of its inspiration and techniques from machine learning (and some, also, from statistics), 
+but is put to different ends. Data mining is carried out by a person, in a specific situation, on a particular data set, 
+with a goal in mind. Typically, this person wants to leverage the power of the various pattern recognition techniques that 
+have been developed in machine learning. Quite often, the data set is massive, complicated, and/or may have special problems 
+(such as there are more variables than observations). Usually, the goal is either to discover / generate some preliminary insights 
+in an area where there really was little knowledge beforehand, or to be able to predict future observations accurately. 
+Moreover, data mining procedures could be either 'unsupervised' (we don't know the answer--discovery) or 'supervised' 
+(we know the answer--prediction). Note that the goal is generally not to develop a more sophisticated understanding of the underlying 
+data generating process. Common data mining techniques would include cluster analyses, classification, regression trees, 
+and neural networks
+</p>
+
+
+<h3 class="archive__subtitle">Quotes</h3>
+<p>Some of my favourite quotes</p>
+<ul>
+  <li>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment. Buddha</li>
+  <li>He who has a why to live can bear almost any how. Friedrich Nietzsche</li>
+  <li>The ego is not master in its own house. Sigmund Freud</li>
+  <li>You have to die a few times before you can really live. Charles Bukowski</li>
+  <li>It is often safer to be in chains than to be free. Franz Kafka</li>
+  <li>To live without Hope is to Cease to live. Fyodor Dostoevsky</li>
+  <li>The master has failed more times the beginner has ever tried. Stephen McCranie</li>
+  <li>Winners never quit and quitters never win. Vince Lombardi</li>
+  <li>Push yourself because no one is going to do it for you. Unknown</li>
+</ul>
+
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

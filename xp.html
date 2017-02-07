@@ -1,0 +1,36 @@
+---
+layout: archive
+author_profile: true
+---
+
+{% include base_path %}
+
+<h3 class="archive__subtitle">Positions Held</h3>
+<p>
+June. 2015 – July. 2015<br>
+<strong>Android and Web App developer [Internship]</strong><br>
+Internship at <a href="http://codly.io/" target="_blank"><u>Codly</u></a>, a start up company in Cairo, Egypt.
+</p>
+<p>
+Oct. 2014 – March. 2015<br>
+<strong>Research Assistance</strong><br>
+I had the honor to join a university team under mister Katakis' guidance, to help, as part of my thesis, implement
+the algorithm described in the paper : Mining Opinion Words and Opinion Targets in a
+Two-Stage Framework Liheng Xu, Kang Liu, Siwei Lai, Yubo Chen and Jun Zhao, published
+in ACL13 conference, in order to evaluate this domain specific polarity lexicon to the one
+created by Pantelis Agathangelou, Ioannis Katakis, Fotios Kokkoras, Konstantinos Ntonas
+in the paper : Mining Domain-Specific Dictionaries of Opinion Words, published at WISE
+2014 conference. <a href="http://deixto.com/niosto/" target="_blank"><u>(http://deixto.com/niosto/)</u></a>
+</p>
+
+<p>
+Feb. 2014 – Now <br>
+<strong>Freelance Web Developer</strong><br>
+Developing Websites for fun and friends.<br> Eg: 
+Created a simple <a href="http://www.cmproductions.eu/" target="_blank">site</a> for a start up event company in Belgium (<a href="http://www.cmproductions.eu/" target="_blank"><u>cmproductions.eu</u></a>)
+</p>
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
